@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mostly Good, LLC</title>
+  <meta name="description" content="Mostly Good, LLC — a technology holding company building products in analytics and AI.">
+  <link rel="canonical" href="https://mostlygood.dev">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>~</text></svg>">
+  <style>
+    :root {
+      --bg: #fafafa;
+      --fg: #1a1a1a;
+      --muted: #666;
+      --accent: #2a5a3a;
+      --border: #e0e0e0;
+      --card-bg: #fff;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #111;
+        --fg: #e8e8e8;
+        --muted: #999;
+        --accent: #6abf7b;
+        --border: #2a2a2a;
+        --card-bg: #1a1a1a;
+      }
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 600px;
+      width: 100%;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 0.25rem;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .tagline {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 2.5rem;
+    }
+
+    h2 {
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin-bottom: 1rem;
+    }
+
+    .products {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .product {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem 1.5rem;
+      background: var(--card-bg);
+      text-decoration: none;
+      color: var(--fg);
+      transition: border-color 0.2s;
+    }
+
+    .product:hover {
+      border-color: var(--accent);
+    }
+
+    .product-name {
+      font-weight: 600;
+      font-size: 1.05rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .product-desc {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .contact {
+      color: var(--muted);
+      font-size: 0.85rem;
+    }
+
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">mostly<span>good</span></div>
+    <p class="tagline">A technology company building products in analytics and AI.</p>
+
+    <h2>Products</h2>
+    <div class="products">
+      <a class="product" href="https://mostlygoodmetrics.com" target="_blank" rel="noopener">
+        <div class="product-name">Mostly Good Metrics</div>
+        <div class="product-desc">Analytics and metrics tooling.</div>
+      </a>
+      <a class="product" href="https://cookedbooks.ai" target="_blank" rel="noopener">
+        <div class="product-name">Cooked Books</div>
+        <div class="product-desc">AI-powered tools for finance.</div>
+      </a>
+    </div>
+
+    <p class="contact">Get in touch &mdash; <a href="mailto:hello@mostlygood.dev">hello@mostlygood.dev</a></p>
+  </div>
+</body>
+</html>
